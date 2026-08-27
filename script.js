@@ -9,8 +9,8 @@ const CONFIG = {
   // What you call her. This is also the login password on Screen 1.
   // Matching is case-insensitive and ignores extra spaces, so don't stress
   // about capitalisation when you tell her the password.
-  nickname: "Cubdi",
-  password: "Kubdi", // <-- CHANGE THIS to her actual nickname/password
+  nickname: "chipdi",
+  password: "chipdi", // <-- CHANGE THIS to her actual nickname/password
 
   brotherName: "Harshit Bafila",
 
@@ -18,27 +18,15 @@ const CONFIG = {
   // Final message on the last page. Edit freely.
   // Leave a blank line between paragraphs to start a new one.
   // ----------------------------------------------------------
-  message: `**Happy Raksha Bandhan, Didi ❤️**
+  message: `**Happy Raksha Bandhan, chipdi ❤️**
 
-Its kind of crazy to think that we arent actually related by blood, and yet somehow, in just one year, youve become someone I genuinely see as my big sister.
+Its kind of crazy to think that we arent actually related by blood, and yet somehow, in jall these years, youve become someone I genuinely see as my lil sister.
+shi btaaun to maine socha ni thaa aisa arc mera but yaa tera mujhe bhaiya bhaiya bolte bolte 11th mai apnni problums share mujhsai krte krte ... maai khudoo vaise hi dekhne lg gyaa and vo jo feel hai naa bde bhaai walii kool haai bhautt krazzy walii,
+but more on that i geninully wat you to treat me as a real big brother always ando whetever you want to khi bhi kuchh vv dikkat ho jo tu aiisee sbsai puch ke v smjh naa a rhi h o to Last maai mujhee yaad krlenaa kyaaa ptaa kaam ajaayun tere,
+baaki toh  tat is all for now ....
 
-College gave me a lot of people, but meeting you was one of those things Ill always be grateful for. You have been there like an elder sister — guiding me, listening to me, scolding me when needed, and making things feel a little easier whenever I needed someone.
-
-Maybe we dont have years of childhood memories together, but the bond weve built in this one year means a lot to me. And honestly, sometimes a relationship doesnt need blood to feel like family.
-
-I hope this Rakhi reminds you that you have a little brother here who genuinely respects you, cares about you, and will always be there for you whenever you need him.
-
-**Thank you for becoming the sister I never knew I needed.**
-
-Happy Raksha Bandhan, Didi.
-**Not by blood, but definitely by heart. ❤️**
-.
-
-This took way longer to build than a normal rakhi post would have, but you're not exactly a normal sister, so.
-
-I don't say this enough, but I notice everything — the way you check up on me without making it a whole thing, the way you still remember stuff I said months ago, the way home feels different (better) when you're around.
-
-So instead of a text, you got an entire fake operating system, a rigged quiz, and a gift box. That's just how I say it.
+AND yes This took way longer to build than a normal rakhi post would have, but you're not exactly a normal sister, so.
+ instead of a text, you got an entire fake operating system, a rigged quiz, and a gift box. That's just how I say it.
 
 Happy Raksha Bandhan. Here's to more years of me pretending to be annoyed and you pretending to believe me.`,
 
@@ -48,10 +36,10 @@ Happy Raksha Bandhan. Here's to more years of me pretending to be annoyed and yo
   // title and caption are optional — leave them as "" to skip.
   // ----------------------------------------------------------
   photos: [
-    { src: "images/photo1.jpeg", title: "hehehe", caption: "" },
-    { src: "images/photo2.jpeg", title: "crazyy pic", caption: "" },
-    { src: "images/photo3.jpeg", title: "hawa anne do", caption: "" },
-    { src: "images/photo4.jpeg", title: "moj", caption: "" },
+    { src: "images/photo1.jpeg", title: "best captured", caption: "" },
+    { src: "images/photo2.jpeg", title: "krazyy haai mtlb", caption: "" },
+    { src: "images/photo3.jpeg", title: "last year", caption: "" },
+    { src: "images/photo4.jpeg", title: "acchiyaa pdhi krlee", caption: "" },
   ],
 };
 
