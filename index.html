@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<title>RAKSHA BANDHAN.EXE — Harshit Bafila</title>
+<meta name="description" content="A little something from your brother." />
+<meta name="theme-color" content="#3a0d18" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%233a0d18'/%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23d4af7a' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23d4af7a'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<main id="app">
+
+  <!-- ============================================================
+       SCREEN 1 — PASSWORD GATE
+  ============================================================= -->
+  <section class="screen is-active" id="screen-password" data-screen="password">
+    <div class="ornament ornament--top" aria-hidden="true"></div>
+    <div class="card password-card">
+      <p class="eyebrow">RAKSHA BANDHAN.EXE</p>
+      <h1 class="display-heading">Something special<br />is waiting for you.</h1>
+      <p class="subtitle">Before entering, prove that you're actually my sister.</p>
+
+      <form id="password-form" class="password-form" autocomplete="off" novalidate>
+        <label class="field-label" for="password-input">Enter your secret password</label>
+        <input
+          class="field-input"
+          id="password-input"
+          name="password"
+          type="password"
+          inputmode="text"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          placeholder="••••••••"
+        />
+        <p class="hint">Hint: You already know what I call you.</p>
+
+        <button class="btn btn-primary" type="submit">
+          <span>ENTER</span>
+        </button>
+
+        <p class="error-message" id="password-error" role="alert" aria-live="polite"></p>
+      </form>
+    </div>
+    <p class="footnote">for my sister, from Harshit</p>
+  </section>
+
+  <!-- ============================================================
+       SCREEN 2 — INITIALIZATION SEQUENCE
+  ============================================================= -->
+  <section class="screen" id="screen-boot" data-screen="boot" hidden>
+    <div class="terminal">
+      <div class="terminal-titlebar">
+        <span class="dot dot--r"></span>
+        <span class="dot dot--y"></span>
+        <span class="dot dot--g"></span>
+        <span class="terminal-title">rakshabandhan.exe</span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <p class="term-line term-line--brand">RAKSHA&nbsp;BANDHAN.EXE</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SCREEN 3 — SISTER VERIFICATION TEST
+  ============================================================= -->
+  <section class="screen" id="screen-quiz" data-screen="quiz" hidden>
+    <header class="quiz-header">
+      <p class="eyebrow">SISTER VERIFICATION TEST</p>
+      <p class="subtitle">To unlock your Rakhi, you need to prove that you are Harshit's OG sister.</p>
+
+      <div class="rakhi-tracker" id="rakhi-tracker" aria-label="Rakhis collected">
+        <p class="rakhi-tracker__label">RAKHIS COLLECTED</p>
+        <div class="rakhi-tracker__row" id="rakhi-row"></div>
+      </div>
+    </header>
+
+    <div class="quiz-card" id="quiz-card"></div>
+  </section>
+
+  <!-- ============================================================
+       CELEBRATION
+  ============================================================= -->
+  <section class="screen" id="screen-celebration" data-screen="celebration" hidden>
+    <canvas id="confetti-canvas"></canvas>
+    <div class="celebration-content">
+      <p class="eyebrow eyebrow--glow">CONGRATULATIONS!</p>
+      <h1 class="display-heading">You have successfully passed the test of being</h1>
+      <p class="celebration-name">HARSHIT BAFILA'S <span>OG SISTER</span></p>
+      <p class="celebration-score" id="celebration-score">5/5 RAKHIS COLLECTED</p>
+      <p class="celebration-access">ACCESS GRANTED.</p>
+      <button class="btn btn-primary" id="claim-btn" type="button">
+        <span>CLAIM YOUR RAKHI</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GIFT BOX
+  ============================================================= -->
+  <section class="screen" id="screen-gift" data-screen="gift" hidden>
+    <p class="gift-caption">One last thing...</p>
+
+    <button class="gift-box" id="gift-box" type="button" aria-label="Open your gift">
+      <span class="gift-glow" aria-hidden="true"></span>
+      <span class="gift-lid" aria-hidden="true"></span>
+      <span class="gift-base" aria-hidden="true">
+        <span class="gift-ribbon-v" aria-hidden="true"></span>
+      </span>
+      <span class="gift-ribbon-bow" aria-hidden="true"></span>
+      <span class="gift-label" id="gift-label">OPEN</span>
+    </button>
+  </section>
+
+  <!-- ============================================================
+       FINAL RAKHI PAGE
+  ============================================================= -->
+  <section class="screen" id="screen-final" data-screen="final" hidden>
+    <div class="final-scroll">
+      <div class="final-content">
+        <p class="eyebrow">RAKSHA BANDHAN</p>
+        <h1 class="display-heading display-heading--final">Happy Raksha&nbsp;Bandhan</h1>
+
+        <div class="message" id="final-message"></div>
+
+        <section class="gallery-section" aria-label="Memories">
+          <p class="eyebrow">SOME MEMORIES...</p>
+          <div class="gallery" id="gallery"></div>
+        </section>
+
+        <footer class="final-footer">
+          <span class="final-footer__line" aria-hidden="true"></span>
+          <span>Harshit Bafila</span>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+Put your photos in this folder.
+
+Name them to match what script.js expects (see the CONFIG.photos array
+near the top of script.js):
+
+    photo1.jpeg
+    photo2.jpeg
+    photo3.jpeg
+    photo4.jpeg
+
+You can use .jpg, .png, or .webp — just update the file extension in
+script.js to match (e.g. "images/photo1.png").
+
+You can also add more than 4 photos, or fewer. Just add/remove entries
+in the CONFIG.photos array in script.js. Each entry looks like:
+
+    { src: "images/photo5.jpg", title: "", caption: "" }
+
+title and caption are optional — leave them as "" if you don't want
+a caption under that photo.
+
+Until real photos are added, the gallery on the final page will show
+a tasteful placeholder card telling you which file is missing — it
+will not look broken, so you can test the whole site before your
+photos are ready.
+
+Delete this text file whenever you want — it's not read by the site.
